@@ -33,6 +33,15 @@ int main(void) {
     printf("Value of ptr4: %d\n", ptr4);
     printf("----------------------------------------\n");
 
+    // Change void pointer - reference
+    int num5 = 420;
+    void *ptr_v2 = &num5;
+    printf("Value of num5: %d\n", num5);
+    *(int*) ptr_v2 = 69;
+    printf("Value of num5: %d\n", num5);
+    printf("----------------------------------------\n");
+
+
 
     return 0;
 }
